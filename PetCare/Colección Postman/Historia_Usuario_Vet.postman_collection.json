@@ -1,0 +1,351 @@
+{
+  "info": {
+    "_postman_id": "c09340aa-2b52-42e3-87db-34c01c653855",
+    "name": "Historia_Usuario_Vet",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55499333",
+    "_collection_link": "https://go.postman.co/collection/55499333-c09340aa-2b52-42e3-87db-34c01c653855?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Adoptante",
+      "item": [
+        {
+          "name": "Registrar Adoptante",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Adoptante",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombre\": \"angel cruz\",\r\n            \"apellido\": \"garcia\",\r\n            \"telefono\": \"0000000005\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Adoptante por ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombre\": \"angel cruz\",\r\n            \"apellido\": \"garcia\",\r\n            \"telefono\": \"0000000005\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes/ADO6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes",
+                "ADO6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar Adoptante",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombre\": \"angel cruz\",\r\n            \"apellido\": \"garcia gonzalesz\",\r\n            \"telefono\": \"0054505\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes/ADO6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes",
+                "ADO6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar Adoptante (Lógico)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombre\": \"angel cruz\",\r\n            \"apellido\": \"garcia gonzalesz\",\r\n            \"telefono\": \"0054505\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes/ADO6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes",
+                "ADO6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Mascota",
+      "item": [
+        {
+          "name": "Listar mascotas",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/mascotas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "mascotas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Mascota",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"idAdoptante\":\"ADO-000004\",\r\n            \"idMascota\": \"MAS-000002\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/mascotas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "mascotas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Consultar Mascotas por Adoptante",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombreVacuna\": \"Antirabica\",\r\n            \"descripcion\": \"vacuna para la rabia\",\r\n            \"idMascota\": \"MAS-000005\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/adoptantes/ADO-000002/mascotas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "adoptantes",
+                "ADO-000002",
+                "mascotas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Vacuna",
+      "item": [
+        {
+          "name": "Listar Vacunas",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombreVacuna\": \"Antirabica\",\r\n            \"descripcion\": \"vacuna para la rabia\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vacunas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vacunas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Vacuna",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n            \"nombreVacuna\": \"Antirabica\",\r\n            \"descripcion\": \"vacuna para la rabia\",\r\n            \"idMascota\": \"MAS-000005\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vacunas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vacunas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Consulta Consolidada",
+      "item": [
+        {
+          "name": "Consulta Consolidada",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/reportes/mascotas-vacunadas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "reportes",
+                "mascotas-vacunadas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
